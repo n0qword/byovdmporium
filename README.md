@@ -13,3 +13,4 @@ The author assumes no responsibility or liability for any misuse, damage, or ill
 ---
 ## Sources
 [Arbitrary Read/Write Token Stealing with DBUtils_2_3.sys](https://github.com/n0qword/byovdmporium/tree/main/pocs/dbutils_token_patch)
+[Protected Process Light Termination with wsftprm.sys 2.0](https://github.com/n0qword/byovdmporium/tree/main/pocs/ppl_termination_wsftprm)

@@ -1,7 +1,7 @@
 /*
     Proof of concept for killing any user-mode process, including protected processes light (PPL).
     The driver used was Topaz Antifraud wsftprm.sys 2.0.0.0
-    The driver supports an IOCTL handler that allows any user to make an arbitrary ZwTerminateProcess call, ensuring that any process is terminated. 
+    The driver supports an IOCTL handler that allows any user to make an arbitrary ZwTerminateProcess call, ensuring that any process is terminated (CVE-2023-52271). 
 
 
     https://www.loldrivers.io/drivers/30e8d598-2c60-49e4-953b-a6f620da1371/

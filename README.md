@@ -14,3 +14,6 @@ The author assumes no responsibility or liability for any misuse, damage, or ill
 ## Sources
 - [Arbitrary Read/Write Token Stealing with DBUtils_2_3.sys](https://github.com/n0qword/byovdmporium/tree/main/pocs/token_stealing_dbutils)
 - [Protected Process Light Termination with wsftprm.sys 2.0](https://github.com/n0qword/byovdmporium/tree/main/pocs/ppl_terminate_wsftprm)
+
+## Utils
+- [Driver loader (SCM + NtLoadDriver)](https://github.com/n0qword/byovdmporium/tree/main/utils/driver_loader_scm)

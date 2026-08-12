@@ -1,6 +1,3 @@
-/*
- * driver_loader.c — SCM-based service creation plus NtLoadDriver/NtUnloadDriver
- */
 #include "driver_loader.h"
 
 #include <stdio.h>

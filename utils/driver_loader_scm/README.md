@@ -1,6 +1,7 @@
-#  SCM Driver Loader
+#  Driver Loader(SCM + NtLoadDriver)
 
-
+<img width="971" height="387" alt="Image" src="https://github.com/user-attachments/assets/82d2eb0b-61cb-4690-b22a-e0d103502ac0" />
+<img width="758" height="339" alt="Image" src="https://github.com/user-attachments/assets/f1802466-52d6-4597-a69c-0b17507c68d0" />
 
 1. Enables **SeLoadDriverPrivilege**
 2. Creates (or updates) a **kernel driver service** via SCM (`CreateService` / `ChangeServiceConfig`)
